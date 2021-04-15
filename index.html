@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BBLabel Translator</title>
+		<link rel="stylesheet" href="./styles/main.css" />
+
+		<meta charset="UTF-8" />
+	</head>
+
+	<body>
+		<div class="form">
+			<input class="file-input button" type="file" name="file_to_translate" />
+			<div class="file-format">
+				<h1>Text Format</h1>
+				<p>
+					Format of each line of the text document / Formatação das linhas no
+					documento
+				</p>
+				<div>
+					<input type="radio" name="file_format" value="section_one" />
+					<p>"§" &rArr; " "</p>
+				</div>
+				<div>
+					<input type="radio" name="file_format" value="space_one" checked />
+					<p>" " &rArr; "§"</p>
+				</div>
+			</div>
+
+			<div class="file-textformat">
+				<h1>File Format</h1>
+				<p>Encoding of the file / Encodificação do ficheiro</p>
+				<p>
+					(try a different one if your text looks bad / tenta o outro se o texto
+					aparecer com caractéres desconhecidos)
+				</p>
+				<div>
+					<input type="radio" name="file_encoding" value="CP1252" checked />
+					<p>CP1252 (windows)</p>
+				</div>
+				<div>
+					<input type="radio" name="file_encoding" value="UTF-8" />
+					<p>UTF-8 (universal)</p>
+				</div>
+			</div>
+			<a class="file-submit button" href="#" onclick="return false;">
+				<h1>TRANSLATE!!!</h1>
+				<p>TRADUZIR!!!</p>
+			</a>
+		</div>
+		<div class="content">
+			<div class="file-preview source">
+				<h1>Original</h1>
+				<pre contenteditable="true" class="body"></pre>
+			</div>
+			<div class="file-preview result">
+				<h1>Translated</h1>
+				<pre contenteditable="true" class="body"></pre>
+			</div>
+		</div>
+		<footer>
+			<p>Made by Pedro with &lt3</p>
+			<a href="">Available on GitHub</a>
+		</footer>
+		<script src="./javascript/main.js"></script>
+	</body>
+</html>
